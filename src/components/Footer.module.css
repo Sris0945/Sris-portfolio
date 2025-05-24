@@ -1,0 +1,19 @@
+.footer {
+    padding: 2rem 1rem;
+    background: #0a0a0a;
+    color: #6e7681;
+    text-align: center;
+}
+
+.backToTop {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.backToTop:hover {
+    color: #1581d1;
+}

@@ -1,0 +1,60 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1e90ff;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.link {
+    position: relative;
+    color: #c9d1d9;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0;
+    transition: color 0.2s;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #1e90ff;
+    transition: width 0.3s;
+}
+
+.link:hover {
+    color: #f5f5f5;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.active {
+    color: #1e90ff;
+}
+
+.active::after {
+    width: 100%;
+}
